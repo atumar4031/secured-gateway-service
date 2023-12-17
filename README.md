@@ -1,6 +1,4 @@
-##################################################################################
-                          SPRING CLOUD API GATEWAY SERVICE
-##################################################################################
+####################################### SPRING CLOUD API GATEWAY SERVICE ################################
 
 DESCRIPTION
 In this project, we build a complete microservice architecture by implementing 5 services, 
