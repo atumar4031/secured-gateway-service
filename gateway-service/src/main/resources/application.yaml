@@ -1,0 +1,30 @@
+jwt:
+  secret: kndmbjawkmnmnasnjhsd@#kndmbjawkmnmnasnjhsdasnjhsd@#kndmbjawkmnmnasnjhsd
+  expiration: 806400
+
+
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: Ninja-Route
+#          uri: ${NINJA_ROUTE_URI:http://localhost:9091}
+#          predicates:
+#            - Path=/ninja/**
+#            - Method=POST,GET,PUT,PATCH,DELETE
+#          filters:
+#            - PrefixPath=/api/v1
+#            - AddResponseHeader=X-Powered-By, DevTukur Gateway Service
+#        - id: Project-Route
+#          uri: ${AUTH_ROUTE_URI:http://localhost:9092}
+#          predicates:
+#            - Path=/project/**
+#            - Method=POST,GET,PUT,PATCH,DELETE
+#          filters:
+#            - PrefixPath=/api/v1
+##            - AddRequestHeader=privateKey, 4243-b90e-747167c035621829377459050417
+
+
+
+

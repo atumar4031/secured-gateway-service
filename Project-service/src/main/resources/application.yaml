@@ -1,0 +1,12 @@
+server:
+  port: 9092
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/psbportals
+    username: root
+    password: atumar4031
