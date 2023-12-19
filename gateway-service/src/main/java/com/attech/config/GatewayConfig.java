@@ -22,13 +22,17 @@ public class GatewayConfig {
         for (ServiceConfig config : serviceConfigs) {
             String serviceName = config.getServiceName();
             String basePath = config.getBasePath();
+            String serverContextPath = config.getContextPath();
             int port = config.getPort();
 
             routes.route(serviceName, r -> r
-                    .path(basePath + "/**")
+                    .path( basePath + "/**")
                     .and()
                     .method("GET", "POST", "PUT", "PATCH", "DELETE")
-                    .filters(f -> f.filter(filter))
+                    .filters(f -> f
+                            .filter(filter)
+                            .prefixPath(serverContextPath+"/api/v1")
+                    )
                     .uri("http://localhost:" + port)
             );
         }

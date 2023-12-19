@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/ninja")
+@RequestMapping("/api/v1/ninja")
 @RequiredArgsConstructor
 public class NinjaController {
     private final NinjaService ninjaService;

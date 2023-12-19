@@ -1,4 +1,6 @@
 server:
+  servlet:
+    context-path: /ninja-service
   port: 9091
 
 spring:
